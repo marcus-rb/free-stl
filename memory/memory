@@ -1,0 +1,133 @@
+#pragma once
+
+/* Implementation TODO
+ * -- CLASSES -- 
+ * POINTER TRAITS
+ * [ ] pointer_traits - class template CXX11
+ * GARBAGE COLLECTOR SUPPORT
+ * [ ] pointer_safety - enum CXX11
+ * ALLOCATORS
+ * [ ] allocator - class template
+ * [ ] allocator_traits - class template -  CXX11
+ * [ ] allocator_arg_t - class - CXX11
+ * [ ] allocator_arg - constant - CXX11 (obvject of type std:::allocaotr_arg_t use to select allocator aware constructors
+ * [ ] uses_allocator - class template CXX11
+ * UNINITIALIZED STORAGE
+ * [ ] raw_storage_iterator - deprecated 17, removed 20. 
+ * SMART POINTERS
+ * [ ] unique_ptr - class template CXX11
+ * [ ] shared_ptr - class template CXX11
+ * [ ] weak_ptr - class template CXX11
+ * [ ] auto_ptr - class template - removed in CXX17
+ * HELPER CLASSES
+ * [ ] DEPENDENCIES - atomic header
+ *		[ ] atomic<shared_ptr> - CXX20 - class template specialization
+ *		[ ] atomic<weak_ptr> - CXX20 - class template specialization
+ * [ ] owner_less - class template CXX11
+ * [ ] enable_shared_from_this - class template CXX11
+ * [ ] bad_weak_ptr - class CXX11
+ * [ ] default_delete - class template CXX11
+ * [ ] DEPENDENCIES - hash from functional header
+ *		[ ] hash<unique_ptr> - class template specialization
+ *		[ ] hash<shared_ptr> - class template specialization
+ * 
+ * -- FUNCTIONS --
+ * MISCELLANIOUS
+ * [ ] to_address - function template CXX20
+ * [ ] addressof - function template CXX11
+ * [ ] align - function CXX11
+ * [ ] assume_aligned - function template CXX20
+ * GARBAGE COLLECTOR SUPPORT
+ * [ ] declare_reachable - cxx11 func
+ * [ ] undeclare_reachable - cxx11 func temp
+ * [ ] declare_no_pointers - cxx11 func
+ * [ ] undeclare_no_pointers - cxx11 func
+ * [ ] get_pointer_safety - cxx11 func
+ * UNINITIALIZED STORAGE
+ * [ ] uninitialized_copy - func temp
+ * [ ] uninitialized_copy_n - cxx11 func temp
+ * [ ] uninitialized_fill - func temp
+ * [ ] uninitialized_fill_n - func temp
+ * [ ] uninitialized_move - func temp cxx17
+ * [ ] uninitialized_move_n - func temp cxx17
+ * [ ] uninitialized_default_construct - func temp cxx17
+ * [ ] uninitialized_default_construct_n - func temp cxx17
+ * [ ] uninitialized_value_construct - func temp cxx17
+ * [ ] uninitialized_value_construct_n - func temp cxx17
+ * [ ] destroy_at - func temp cxx17
+ * [ ] destroy - func temp cxx17
+ * [ ] destroy_n - func temp cxx17
+ * [ ] get_temporary_buffer - deprecated cxx17, removed cxx20 - func temp
+ * [ ] return_temporary_buffer - deprecated cxx17, removed cxx20 - func temp
+ * SMART POINTER NON-MEMBER OPERATIONS
+ * [ ] make_unique - func template cxx14
+ * [ ] make_unique_for_overwrite - func templat cxx20
+ * operators for unique_ptr
+ * [ ] operator==
+ * [ ] operator!= - removed in cxx20
+ * [ ] operator<
+ * [ ] operator<=
+ * [ ] operator>
+ * [ ] operator>=
+ * [ ] operator <=> - cxx 20
+ * 
+ * [ ] make_shared_for_overwrite - cxx20 func temp
+ * [ ] make_shared - func template
+ * [ ] allocate_shared - func template
+ * [ ] allocate_shared_for_overwrite - func temlate cxx20
+ * [ ] static_pointer_cast - func temp
+ * [ ] dynamic_pointer_cast - func temp
+ * [ ] const_pointer_cast - func temp
+ * [ ] reinterpret_pointer_cast - func temp cxx17
+ * [ ] get_deleter - func temp
+ * operators for shared_ptr
+ * [ ] operator==
+ * [ ] operator != - removed cxx20
+ * [ ] operator < - removed cxx20
+ * [ ] operator <= - removed cxx20
+ * [ ] operator > - removed cxx20
+ * [ ] operator >= - removed cxx20
+ * [ ] operator <=> - cxx20
+ * 
+ * [ ] operator << func temp 
+ * [ ] DEPENDENCY - swap in algorithm/utility/string_view
+ *		[ ] swap<unique_ptr> func temp cxx11
+ *		[ ] swap<weak_ptr> func temp cxx11
+ *		[ ] swap<shared_ptr> func temp cxx11
+ * 
+ * [ ] DEPENDENCY - various from atomic header - all deprecated in cxx20, all func temp, all with shared_ptr as temp arg
+ *		[ ] atomic_is_lock_free
+ *		[ ] atomic_load
+ *		[ ] atomic_load_explicit
+ *		[ ] atomic_store
+ *		[ ] atomic_store_explicit
+ *		[ ] atomic_exchange
+ *		[ ] atomic_exchange_explicit
+ *		[ ] atomic_compare_exchange_weak
+ *		[ ] atomic_compare_exchange_strong
+ *  	[ ] atomic_compare_exchange_weak_explicit
+ *		[ ] atomic_compare_exchange_strong_explicit
+ * 
+ * -- NIEBLOIDS --
+ * UNINITIALIZED STORAGE
+ * ALL IN RANGES HEADER (ranges::), all niebloid, all cxx20
+ * [ ] uninitialized_copy
+ * [ ] uninitialized_copy_n
+ * [ ] uninitialized_fill
+ * [ ] uninitialized_fill_n
+ * [ ] uninitialized_move
+ * [ ] uninitialized_move_n
+ * [ ] uninitialized_default_construct
+ * [ ] uninitialized_default_construct_n
+ * [ ] uninitialized_value_construct
+ * [ ] uninitialized_value_construct_n
+ * [ ] destroy_at
+ * [ ] destroy
+ * [ ] destroy_n
+ */
+
+#include "..\_common\core\libdef.h"
+
+_STL_BEGIN_
+
+_STL_END_

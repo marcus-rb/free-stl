@@ -1,0 +1,12 @@
+#ifndef _ARRAY_
+#define _ARRAY_
+
+// CXX 11
+
+#include "..\_common\core\libdef.h"
+
+_STL_BEGIN_
+
+_STL_END_
+
+#endif

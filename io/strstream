@@ -1,0 +1,9 @@
+#pragma once
+
+// DEPRECATED CXX98
+
+#include "..\_common\core\libdef.h"
+
+_STL_BEGIN_
+
+_STL_END_

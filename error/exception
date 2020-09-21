@@ -1,0 +1,74 @@
+#pragma once
+
+#include "..\_common\core\libdef.h"
+
+_STL_BEGIN_
+
+struct exception_data {
+	const char* m_what;
+	bool m_do_free;
+};
+
+void exception_destroy() {
+}
+
+class exception {
+private:
+	exception_data m_data;
+public:
+#ifndef _HAS_CXX_11_
+	exception() : m_data() throw() {}
+	exception(const exception& other) throw() {}
+
+	exception& operator=(const exception& other) throw() {
+
+	}
+
+	virtual const char* what() const throw() {
+
+	}
+
+	virtual ~exception() {
+
+	}
+
+#else
+
+	exception() noexcept : m_data() {}
+
+	exception(const exception& other) noexcept : m_data() {
+
+		// extern strcmp(what(), other.what()) == 0;
+	}
+
+	exception& operator=(const exception& other) noexcept {
+
+	}
+
+	virtual const char* what() const noexcept {
+
+	}
+
+	virtual ~exception() {
+
+	}
+
+#endif
+};
+
+/* NOTE:
+ * Because copying std::exception is not permitted to throw exceptions, diagnostic message, it is typically implemented as a copy-on-write string. 
+ * when derived classes (such as std::runtime_error) have to manage a user-defined
+ * diagnostic message, it is typically implemented as a copy-on-write string.
+ * 
+ * If *this and other both have dynamic type std::exception then 
+ * std::strcmp(what(), other.what()) == 0 after assignment
+ */
+
+class bad_exception : public exception {};
+
+class nested_exception;
+
+
+
+_STL_END_

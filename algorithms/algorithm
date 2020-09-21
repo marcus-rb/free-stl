@@ -1,0 +1,10 @@
+#ifndef _ALGORITHM_
+#define _ALGORITHM_
+
+#include "..\_common\core\libdef.h"
+
+_STL_BEGIN_
+
+_STL_END_
+
+#endif

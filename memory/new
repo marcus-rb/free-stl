@@ -1,0 +1,109 @@
+#pragma once
+
+/* TODO new header
+ * -- CLASSES --
+ * [ ] bad_alloc - class
+ * [ ] bad_array_new_length - cxx11 class
+ * [ ] nothrow_t - class
+ * [ ] align_val_t - cxx17 class
+ * [ ] destroying_delete_t - cxx20 class
+ * 
+ * -- TYPES --
+ * [ ] new handler
+ * 
+ * -- CONSTANTS -- 
+ * [ ] nothrow
+ * [ ] hardware_destructive_interference_size - cxx17
+ * [ ] hardware_constructive_interference_size - cxx17
+ * 
+ * -- FUNCTIONS --
+ * [ ] operator new
+ * [ ] operator new[]
+ * [ ] operator delete
+ * [ ] operator delete[]
+ * [ ] get_new_handler  cxx11
+ * [ ] set_new_handler
+ * [ ] launder - cxx17
+ */
+
+#include "..\_common\core\libdef.h"
+#include "..\error\exception"
+
+_STL_BEGIN_
+
+// ===============
+// === CLASSES ===
+// ===============
+class bad_alloc : public exception {
+public:
+#ifndef _HAS_CXX_11_
+
+	bad_alloc() throw() {};
+	bad_alloc(const bad_alloc& other) throw() {};
+
+	bad_alloc& operator=(const bad_alloc& other) throw() {
+		// Assignmnet
+	};
+
+	virtual const char* what() const throw() {
+
+	};
+
+#else
+
+	bad_alloc() noexcept {};
+	bad_alloc(const bad_alloc& other) noexcept {
+		// If *this and other both have type bad_alloc then std::strcmp(what(), other.what()) == 0;
+	};
+
+	bad_alloc& operator=(const bad_alloc& other) noexcept {
+		// Assignment operator
+	}
+	
+	virtual const char* what() const noexcept {
+		// Returns a pointer to a null-terminated string with explanatory information. The string
+		// is suitable for conversion and display as a std::wstring. The pointer is guaranteed to be valid at least until the exception object 
+		// from which it is obtained is destroyed, or until a non-const member function on the exception object is called.
+	};
+
+
+
+#endif
+};
+
+#ifdef _HAS_CXX_11_
+
+class bad_array_new_length {};
+
+#endif
+
+class bad_array_new_length {
+
+};
+
+class nothrow_t {
+
+};
+
+#ifdef _HAS_CXX_17_
+
+class align_val_t {
+
+};
+
+#endif
+
+
+#ifdef _HAS_CXX_20_
+
+struct destroying_delete_t {
+	
+};
+
+#endif
+
+typedef void (*new_handler)();
+// std::new_handler is the function pointer type (pointer to function that takes no arguments and returns void),
+// which is used by the functions std::set_new_handler and std::get_new_handler
+
+_STL_END_

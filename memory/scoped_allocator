@@ -1,0 +1,12 @@
+#pragma once
+
+// C++11
+
+/* TODO 
+ * -- CLASSES --
+ * [ ] scoped_allocator_adaptor - class template
+ * 
+ * -- FUNCTIONS --
+ * [ ] operator==
+ * [ ] operator!=
+ */
