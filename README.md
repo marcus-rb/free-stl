@@ -6,3 +6,6 @@ Hi, I'm Marcus, and I made this. This source can be added to your include path a
 
 ## License?
 This project is merely in the planning stage, a license is a bit early. For now, it remains restricted.
+
+## How do I get around this thing?
+Use the navigate.md file
