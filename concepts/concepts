@@ -1,1 +1,55 @@
 #pragma once
+#include "..\_common\core\libdef.h"
+// CXX20
+
+/* TODO CONCEPTS
+ * -- CORE LANGUAGE CONCEPTS --  
+ * [ ] same_as
+ * [ ] derived_from
+ * [ ] convertible_to
+ * [ ] common_reference_with
+ * [ ] common_with
+ * [ ] integral
+ * [ ] signed_integral
+ * [ ] unsigned_integral
+ * [ ] floating_point
+ * [ ] assignable_from
+ * [ ] swappable
+ * [ ] swappable_with
+ * [ ] destructible
+ * [ ] constructible_from
+ * [ ] default_initializable
+ * [ ] move_constructible
+ * [ ] copy_constructible
+ * 
+ * -- COMPARISON CONCEPTS --
+ * [ ] equality_comparable
+ * [ ] equality_comparable_with
+ * [ ] totally_ordered
+ * [ ] totally_ordered_with
+ * 
+ * -- OBJECT CONCEPTS --
+ * [ ] movable
+ * [ ] copyable
+ * [ ] semiregular
+ * [ ] regular
+ * 
+ * -- Callable concepts --
+ * [ ] invocable
+ * [ ] regular_invocable
+ * [ ] predicate
+ * [ ] relation
+ * [ ] equivalence_relation
+ * [ ] strict_weak_order
+ * 
+ * -- CUSTOMIZATION POINT OBJECTS --
+ * [ ] ranges::swap
+ */
+
+#ifdef _HAS_CXX_20_
+
+_STL_BEGIN_
+
+_STL_END_
+
+#endif // Endif has-cxx-20

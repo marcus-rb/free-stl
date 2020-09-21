@@ -4,7 +4,7 @@
 #define _STL_BEGIN_ namespace gnustl {
 #define _STL_END_ }
 
-#define _CXX_STANDARD_YEAR_ 2017
+#define _CXX_STANDARD_YEAR_ 2020
 
 #if _CXX_STANDARD_YEAR_ > 1997
 #define _HAS_CXX_98_
@@ -23,7 +23,7 @@
 #endif
 
 #if _CXX_STANDARD_YEAR_ > 2019
-#define _HAS_CXX_20
+#define _HAS_CXX_20_
 #endif
 
 #define DEBUGMODE true

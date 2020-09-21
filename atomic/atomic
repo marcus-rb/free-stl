@@ -32,7 +32,26 @@
  * [ ] atomic_fetch_xor_explicit
  * [ ] atomic_wait - cxx20
  * [ ] atomic_wait_explicit - cxx20
+ * [ ] atomic_notify_one - cxx20
+ * [ ] atomic_notify_all - cxx20
+ * [ ] atomic_flag_test - CXX20 until other is said
+ * [ ] atomic_flag_test_explicit
+ * [ ] atomic_flag_test_and_set
+ * [ ] atomic_flag_test_and_set_explicit
+ * [ ] atomic_flag_clear
+ * [ ] atomic_flag_clear_explicit
+ * [ ] atomic_flag_wait
+ * [ ] atomic_flag_wait_explicit
+ * [ ] atomic_flag_notify_one
+ * [ ] atomic_flag_notify_all - LAST CXX20
+ * [ ] atomic_init - cxx11, deprecated cxx20
+ * [ ] kill_dependency - cxx11
+ * [ ] atomic_thread_fence
+ * [ ] atomic_signal_fence
  * 
+ * -- PREPROCESSOR MARCOS --
+ * [ ] ATOMIC_VAR_INIT - cxx11 deprecated cxx20
+ * [ ] ATOMIC_FLAG_INIT - cxx20 deprecated cxx20
  */
 
 #include "..\_common\core\libdef.h"
