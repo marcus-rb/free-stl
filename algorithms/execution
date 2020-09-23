@@ -1,10 +1,49 @@
 #ifndef _EXECUTION_
 #define _EXECUTION_
 
+/* TODO EXECUTION HEADER - ALL CXX17
+ * -- Classes -- 
+ * [ ] is_execution_policy - class template
+ * In namespace std::execution
+ * [ ] sequenced_policy
+ * [ ] parallel_policy
+ * [ ] parallel_unsequenced_policy
+ * [ ] unsequenced_policy
+ * 
+ * -- CONSTANTS --
+ * [ ] seq
+ * [ ] par
+ * [ ] par_unseq
+ * [ ] unseq - CXX20
+ */
+
 #include "..\_common\core\libdef.h"
 
-_STL_BEGIN_
+#ifdef _HAS_CXX_17_
 
-_STL_END_
+#define _EXECUTION_BEGIN_ namespace execution {
+#define _EXECUTION_END }
 
-#endif
+_STL_BEGIN_ // namespace std {
+
+template <typename T>
+class is_execution_policy {
+
+};
+
+_EXECUTION_BEGIN_
+
+class sequenced_policy;
+
+class parallel_policy;
+
+class parallel_unsequenced_policy;
+
+class unsequenced_policy;
+
+
+_EXECUTION_END
+_STL_END_ // } for namespace std
+
+#endif // endif ifdef _HAS_CXX_17_
+#endif // endif ifdef _EXECUTION_

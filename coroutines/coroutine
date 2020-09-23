@@ -1,1 +1,35 @@
 #pragma once
+
+/* TODO
+ * -- CLASSES --
+ * [ ] coroutine_traits - temp
+ * [ ] coroutine_handle - temp 
+ * [ ] hash<coroutine_handle> - temp spec
+ * 
+ * non-op coroutines
+ * [ ] noop_coroutine_promise - class
+ * [ ] noop_coroutine_handle - typedef
+ * 
+ * trivial awaitables - class
+ * [ ] suspend_never
+ * [ ] suspend_always
+ * 
+ * functions - compares coroutine handles
+ * [ ] operator==
+ * [ ] operator<=>
+ * 
+ * no-op coroutines
+ * [ ] noop_coroutine
+ */
+
+#include "..\_common\core\libdef.h"
+
+#ifdef _HAS_CXX_20_
+
+#include "..\utilities\compare"
+
+_STL_BEGIN_
+
+_STL_END_
+
+#endif // endif ifdef _HAS_CXX_20_

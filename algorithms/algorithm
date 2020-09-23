@@ -1,6 +1,124 @@
 #ifndef _ALGORITHM_
 #define _ALGORITHM_
 
+/* TODO algorithm header
+ * -- FUNCTIONS --
+ * Non-modifying sequence operations - all function templates
+ * [ ] all_of - cxx11
+ * [ ] any_of - cxx11
+ * [ ] none_of - cxx11
+ * [ ] for_each
+ * [ ] for_each_n
+ * [ ] count
+ * [ ] count_if
+ * [ ] mismatch
+ * [ ] find
+ * [ ] find_if
+ * [ ] find_if_not
+ * [ ] find_end
+ * [ ] find_first_of
+ * [ ] adjacent_find
+ * [ ] search
+ * [ ] search_n
+ * 
+ * Modifying sequence operations all function templates
+ * [ ] copy
+ * [ ] copy_if - cxx11
+ * [ ] copy_n - cxx11
+ * [ ] copy_backward
+ * [ ] move - cxx11
+ * [ ] move_backward - cxx11
+ * [ ] fill
+ * [ ] fill_n
+ * [ ] transform
+ * [ ] generate
+ * [ ] generate_n
+ * [ ] remove
+ * [ ] remove_if
+ * [ ] remove_copy
+ * [ ] remove_copy_if
+ * [ ] replace
+ * [ ] replace_if
+ * [ ] replace_copy
+ * [ ] replace_copy_if
+ * [ ] swap
+ * [ ] swap_ranges
+ * [ ] iter_swap
+ * [ ] reverse
+ * [ ] reverse_copy
+ * [ ] rotate
+ * [ ] rotate_copy
+ * [ ] shift_left - cxx20
+ * [ ] shift_right - cxx20
+ * [ ] random_shuffle - until c++17
+ * [ ] shuffle - cxx11
+ * [ ] sample - cxx17
+ * [ ] unique
+ * [ ] unique_copy
+ * 
+ * Partitioning operations - all function templates
+ * [ ] is_partitioned - cxx11
+ * [ ] partition
+ * [ ] partition_copy - cxx11
+ * [ ] stable_partition 
+ * [ ] partition_point - cxx11
+ * 
+ * Sorting operations
+ * [ ] is_sorted - cxx11
+ * [ ] is_sorted_until - cxx11
+ * [ ] sort
+ * [ ] partial_sort
+ * [ ] partial_sort_copy
+ * [ ] stable_sort
+ * [ ] nth_element
+ * 
+ * Binary search operations (on sorted ranges)
+ * [ ] lower_bound
+ * [ ] upper_bound
+ * [ ] binary_search
+ * [ ] equal_range
+ * 
+ * Other operations on sorted ranges
+ * [ ] merge
+ * [ ] inplace_merge
+ * 
+ * Set operations (on sorted ranges)
+ * [ ] includes
+ * [ ] set_difference
+ * [ ] set_intersection
+ * [ ] set_symmetric_difference
+ * [ ] set_union
+ * 
+ * Heap operations
+ * [ ] is_heap - cxx11
+ * [ ] is_heap_until - cxx11
+ * [ ] make_heap
+ * [ ] push_heap
+ * [ ] pop_heap
+ * [ ] sort_heap
+ * 
+ * Minimum/maximum operations
+ * [ ] max
+ * [ ] max_elements
+ * [ ] min
+ * [ ] min_element
+ * [ ] minmax - cxx11
+ * [ ] minmax_element - cxx11
+ * [ ] clamp - cxx17
+ * 
+ * Comparison operations
+ * [ ] equal
+ * [ ] lexicographical_compare
+ * [ ] lexicographical_compare_three_way - cxx20
+ * 
+ * Permutation operations
+ * [ ] is_permutation - cxx11
+ * [ ] next_permutation
+ * [ ] prev_permutation
+ * 
+ * PLUS ALL OF THE ABOVE DEFINED FOR THE STD::RANGES NAMESPACE
+ */
+
 #include "..\_common\core\libdef.h"
 
 _STL_BEGIN_
