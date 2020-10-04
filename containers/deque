@@ -1,10 +1,50 @@
-#ifndef _ARRAY_
-#define _ARRAY_
+#pragma once
 
 #include "..\_common\core\libdef.h"
 
+#include "..\utilities\compare"
+#include "..\utilities\initializer_list"
+
+/* TODO deque header
+ * -- CLASSES --
+ * [ ] deque - template
+ * 
+ * -- FUNCTIONS --
+ * [ ] operators
+ *		[ ] ==
+ *		[ ] != - rem cxx20
+ *		[ ] < - rem cxx20
+ *		[ ] <= - rem cxx20
+ *		[ ] > - rem cxx20
+ *		[ ] >= - rem cxx20
+ *		[ ] <=> - cxx20
+ * [ ] std::swap<deque> - func template specialization
+ * [ ] erase
+ * [ ] erase_if
+ * 
+ * Range access
+ * [ ] begin - cxx11
+ * [ ] cbegin - cxx14
+ * [ ] end - cxx11
+ * [ ] cend - cxx14
+ * [ ] rbegin - cxx14
+ * [ ] crbegin - cxx14
+ * [ ] rend - cxx14
+ * [ ] crend - cxx14
+ * [ ] size - cxx17
+ * [ ] ssize - cxx20
+ * [ ] empty - cxx17
+ * [ ] data - cxx17
+ */
+
 _STL_BEGIN_
 
-_STL_END_
+template <typename T> class allocator { };
 
-#endif
+template <typename _t, allocator<_t> _alloc = allocator<_t>()>
+class vector {
+
+};
+
+
+_STL_END_

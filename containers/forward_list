@@ -1,10 +1,46 @@
-#ifndef _ARRAY_
-#define _ARRAY_
+#pragma once
 // CXX11
 #include "..\_common\core\libdef.h"
+
+// TODO
+/* -- CLASSES --
+* [ ] forward_list
+ * 
+ *  * -- FUNCTIONS --
+ * [ ] operators
+ *		[ ] ==
+ *		[ ] != - rem cxx20
+ *		[ ] < - rem cxx20
+ *		[ ] <= - rem cxx20
+ *		[ ] > - rem cxx20
+ *		[ ] >= - rem cxx20
+ *		[ ] <=> - cxx20
+ * [ ] std::swap<forward_list> - func template specialization
+ * [ ] erase
+ * [ ] erase_if
+ * 
+ * Range access
+ * [ ] begin - cxx11
+ * [ ] cbegin - cxx14
+ * [ ] end - cxx11
+ * [ ] cend - cxx14
+ * [ ] rbegin - cxx14
+ * [ ] crbegin - cxx14
+ * [ ] rend - cxx14
+ * [ ] crend - cxx14
+ * [ ] size - cxx17
+ * [ ] ssize - cxx20
+ * [ ] empty - cxx17
+ * [ ] data - cxx17
+ */
+
+#ifdef _HAS_CXX_11_
+
+#include "..\utilities\compare"
+#include "..\utilities\initializer_list"
 
 _STL_BEGIN_
 
 _STL_END_
 
-#endif
+#endif // endif _HAS_CXX_11

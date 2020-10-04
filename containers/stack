@@ -1,11 +1,27 @@
-#ifndef _ARRAY_
-#define _ARRAY_
+#pragma once
+
+// TODO
+/* -- CLASSES --
+ * [ ] stack - class template
+ * [ ] std::uses_allocator<std::stack> - cxx11 - class template specialization
+ * 
+ * -- FUNCTIONS --
+ * [ ] operator==
+ * [ ] operator!=
+ * [ ] operator<
+ * [ ] operator<=
+ * [ ] operator>
+ * [ ] operator>=
+ * [ ] operator<=> - cxx20
+ * 
+ * [ ] std::swap<std::stack> - func template
+ */
 
 #include "..\_common\core\libdef.h"
+
+#include "..\utilities\compare"
+#include "..\utilities\initializer_list"
 
 _STL_BEGIN_
 
 _STL_END_
-
-// Cxx11
-#endif

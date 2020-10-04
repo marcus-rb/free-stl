@@ -1,11 +1,59 @@
 #ifndef _ARRAY_
 #define _ARRAY_
 //CXX11
+
+/* TODO
+ * -- CLASSES --
+ * [ ] array - template
+ * [ ] std::tuple_size<array> - template specialization
+ * [ ] std::tuple_element<array> - template specialization
+ * 
+ * -- FUNCTIONS --
+ * All the functions are function templates
+ * [ ] operator==
+ * [ ] operator!= - removed cxx20
+ * [ ] operator< - removed cxx20 
+ * [ ] operator<= - removed cxx20 
+ * [ ] operator> - removed cxx20 
+ * [ ] operator>= - removed cxx20 
+ * [ ] operator<=>
+ * [ ] std::swap<std::array> - cxx11
+ * [ ] to_array - cxx20
+ * [ ] std::get<>std::array> - element access
+ * 
+ * Range access
+ * [ ] begin - cxx11
+ * [ ] cbegin - cxx14
+ * [ ] end - cxx11
+ * [ ] cend - cxx14
+ * [ ] rbegin - cxx14
+ * [ ] crbegin - cxx14
+ * [ ] rend - cxx14
+ * [ ] crend - cxx14
+ * [ ] size - cxx17
+ * [ ] ssize - cxx20
+ * [ ] empty - cxx17
+ * [ ] data - cxx17
+ */
 #include "..\_common\core\libdef.h"
 
+#ifdef _HAS_CXX_11_
+
+#include "..\utilities\compare"
+#include "..\utilities\initializer_list"
+
 _STL_BEGIN_
+
+#ifndef _HAS_CXX_20_
+
+bool operator==(array& left, array& right) {
+
+}
+
+#endif
 
 _STL_END_
 
 // Cxx11
-#endif
+#endif // endif ifdef _HAS_CXX_11_
+#endif // endif ifdef _ARRAY_

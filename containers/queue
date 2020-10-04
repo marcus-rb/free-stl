@@ -1,11 +1,30 @@
-#ifndef _ARRAY_
-#define _ARRAY_
+#pragma once
+
+// TODO
+/* -- CLASSES --
+ * [ ] queue
+ * [ ] priority_queue
+ * [ ] std::uses_allocator<std::queue> - cxx11
+ * [ ] std::uses_allocator<std::priority_queue> - cxx11
+ * -- FUNCTIONS --
+ * For queue
+ *  * [ ] operators
+ *		[ ] ==
+ *		[ ] != - rem cxx20
+ *		[ ] < - rem cxx20
+ *		[ ] <= - rem cxx20
+ *		[ ] > - rem cxx20
+ *		[ ] >= - rem cxx20
+ *		[ ] <=> - cxx20
+ * [ ] std::swap<queue> - func template specialization
+ * [ ] std::swap<priority_queue> - func template specialization
+ */
 
 #include "..\_common\core\libdef.h"
+
+#include "..\utilities\compare"
+#include "..\utilities\initializer_list"
 
 _STL_BEGIN_
 
 _STL_END_
-
-// Cxx11
-#endif

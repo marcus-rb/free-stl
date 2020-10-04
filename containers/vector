@@ -1,11 +1,47 @@
-#ifndef _ARRAY_
-#define _ARRAY_
+#pragma once
+
+// TODO
+/* -- CLASSES --
+ * [ ] vector - class temp
+ * [ ] vector<bool> - temp spec
+ * [ ] std::hash<vector<bool>> - class temp spec
+ * 
+ * forward dec
+ * [ ] hash  - cxx11 - defined in <functional>
+ *
+ * -- FUNCTIONS --
+ * For both class templates
+ * [ ] operator==
+ * [ ] operator!= - rem cxx20
+ * [ ] operator< - rem cxx20
+ * [ ] operator<= - rem cxx20
+ * [ ] operator> - rem cxx20
+ * [ ] operator>= - rem cxx20
+ * [ ] operator<=> - cxx20
+ * [ ] std::swap<vector>
+ * [ ] erase_if<vector>
+ * [ ] erase<vector>
+ *
+ * Range access
+ * [ ] begin - cxx11
+ * [ ] cbegin - cxx14
+ * [ ] end - cxx11
+ * [ ] cend - cxx14
+ * [ ] rbegin - cxx14
+ * [ ] crbegin - cxx14
+ * [ ] rend - cxx14
+ * [ ] crend - cxx14
+ * [ ] size - cxx17
+ * [ ] ssize - cxx20
+ * [ ] empty - cxx17
+ * [ ] data - cxx17
+ */
 
 #include "..\_common\core\libdef.h"
 
-_STL_BEGIN_
+#include "..\utilities\compare"
+#include "..\utilities\initializer_list"
 
-_STL_END_
+_STL_BEGIN_ // namespace std {
 
-// Cxx11
-#endif
+_STL_END_ // } namespace std

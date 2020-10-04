@@ -1,12 +1,46 @@
-#ifndef _ARRAY_
-#define _ARRAY_
+#pragma once
 
-// CXX 11
+// TODO
+/* -- CLASSES --
+ * [ ] unordered_set
+ * [ ] unordered_multiset
+ *
+ * -- FUNCTIONS --
+ * For both class templates
+ * [ ] operator==
+ * [ ] operator!= - rem cxx20
+ * [ ] std::swap<unordered_set / unordered_multiset>
+ * [ ] erase_if<unordered_set / unordered_multiset>
+ *
+ * Range access
+ * [ ] begin - cxx11
+ * [ ] cbegin - cxx14
+ * [ ] end - cxx11
+ * [ ] cend - cxx14
+ * [ ] rbegin - cxx14
+ * [ ] crbegin - cxx14
+ * [ ] rend - cxx14
+ * [ ] crend - cxx14
+ * [ ] size - cxx17
+ * [ ] ssize - cxx20
+ * [ ] empty - cxx17
+ * [ ] data - cxx17
+ */
 
 #include "..\_common\core\libdef.h"
 
-_STL_BEGIN_
+#include "..\utilities\compare"
+#include "..\utilities\initializer_list"
 
-_STL_END_
+#ifdef _HAS_CXX_11_
 
-#endif
+_STL_BEGIN_ // namespace std {
+
+_STL_END_ // } namespace std
+
+#else // else for _HAS_CXX_11_
+
+ // ERROR STUFF
+ // unordered_set is not a part of the C++ STL as of C++11
+
+#endif // endif ifdef _HAS_CXX_11_

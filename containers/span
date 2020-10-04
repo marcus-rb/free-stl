@@ -1,12 +1,43 @@
-#ifndef _ARRAY_
-#define _ARRAY_
+#pragma once
 // CXX20
 
 #include "..\_common\core\libdef.h"
 
+#ifdef _HAS_CXX_20_
+
 _STL_BEGIN_
+
+// TODO
+/* -- CLASSES --
+ * [ ] span - class template
+ * 
+ * -- CONSTANTS -- 
+ * [ ] dynamic_extent 
+ * 
+ * -- FUNCTIONS --
+ * [ ] as_bytes
+ * [ ] as_writable_bytes
+ * 
+ * range access
+ * [ ] begin - cxx11
+ * [ ] cbegin - cxx14
+ * [ ] end - cxx11
+ * [ ] cend - cxx14
+ * [ ] rbegin - cxx14
+ * [ ] crbegin - cxx14
+ * [ ] rend - cxx14
+ * [ ] crend - cxx14
+ * [ ] size - cxx17
+ * [ ] ssize - cxx20
+ * [ ] empty - cxx17
+ * [ ] data - cxx17
+ * 
+ */
 
 _STL_END_
 
-// Cxx11
+#else 
+
+// ERROR STUFF
+
 #endif
